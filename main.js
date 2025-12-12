@@ -7,20 +7,6 @@
     });
   }
 
-  // Copy email to clipboard
-  const copyBtn = document.querySelector('.copy-btn');
-  if (copyBtn) {
-    copyBtn.addEventListener('click', () => {
-      const email = copyBtn.getAttribute('data-clipboard');
-      navigator.clipboard.writeText(email).then(() => {
-        copyBtn.textContent = 'Copied!';
-        setTimeout(() => {
-          copyBtn.textContent = 'Copy';
-        }, 2000);
-      });
-    });
-  }
-
   // Update footer year
   const footer = document.querySelector('.footer p');
   if (footer) {
